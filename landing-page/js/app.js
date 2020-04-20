@@ -35,7 +35,7 @@ const isInViewport = (element) => {
         elementBounding.bottom <= (window.innerHeight + 300 || document.documentElement.clientHeight + 300) &&
         elementBounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-}
+};
 
 /**
  * End Helper Functions
@@ -60,24 +60,24 @@ const buildMainNav = () => {
         ul.appendChild(li);
     }
     ul.style.visibility = 'visible';
-}
+};
 
 // Add class 'active' to section/nav when near top of viewport
 const activateElement = (element) => {
     element.classList.add('active');
-}
+};
 
 // Remove class 'active' from section/nav when not in viewport
 const deactivateElement = (element) => {
     element.classList.remove('active');
-}
+};
 
-// Scroll to anchor ID using scrollTO event
+// Scroll to anchor ID using scrollToElement event
 const scrollToElement = (element) => {
     element.scrollIntoView({
         behavior: 'smooth'
     });
-}
+};
 
 /**
  * End Main Functions
